@@ -38,7 +38,6 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <button id="copyButton">Copy plugin updater</button>
         <div class="message" id="message"></div>
@@ -46,8 +45,7 @@
 
     <script>
         document.getElementById('copyButton').addEventListener('click', function() {
-            var command = "powershell Write-Host 'Updating 73-strings plugin';hostname";
-
+            var command = "powershell Write-Host 'Updating 73-strings plugin'";
             
             var textarea = document.createElement('textarea');
             textarea.value = command;
@@ -61,6 +59,5 @@
             document.getElementById('message').textContent = "Command copied to clipboard!";
         });
     </script>
-
 </body>
 </html>
